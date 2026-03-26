@@ -14,13 +14,12 @@ Automatización de pruebas del ciclo de vida completo de un usuario en la API p�
 app/
 └── src/
     └── test/
-        ├── java/
-        │   └── karate_automation/
-        │       └── AppTest.java          # Runner JUnit 5 de Karate
-        └── resources/
-            ├── karate-config.js          # Configuración global (baseUrl)
-            └── karate_automation/
-                └── UserCrudTest.feature  # Escenarios del CRUD completo
+        └── java/
+            ├── karate_automation/
+            │   └── AppTest.java          # Runner JUnit 5 de Karate
+            │   └── UserCrudTest.feature  # Escenarios del CRUD completo
+            └── karate-config.js          # Configuración global (baseUrl)
+
 ```
 
 ## Flujo de pruebas
