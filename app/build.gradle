@@ -17,6 +17,15 @@ java {
     }
 }
 
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
     systemProperty 'karate.options', System.properties.getProperty('karate.options', '')
